@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.inventorysystem.ItemController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="109.0">
+         <children>
+            <Label fx:id="productIdL" styleClass="shadow" stylesheets="@styleSheet.css" text="Product Id" textFill="WHITE">
+               <font>
+                  <Font name="Nirmala UI Bold" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="52.0" layoutY="10.0" prefHeight="100.0" prefWidth="259.0">
+         <children>
+            <Label fx:id="nameL" styleClass="shadow" stylesheets="@styleSheet.css" text="Name" textFill="WHITE">
+               <font>
+                  <Font name="Nirmala UI Bold" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="670.0" layoutY="10.0" prefHeight="100.0" prefWidth="167.0">
+         <children>
+            <Label fx:id="quantityL" styleClass="shadow" stylesheets="@styleSheet.css" text="Quantity" textFill="WHITE">
+               <font>
+                  <Font name="Nirmala UI Bold" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="692.0" layoutY="10.0" prefHeight="100.0" prefWidth="210.0">
+         <children>
+            <Label fx:id="descriptionL" styleClass="shadow" stylesheets="@styleSheet.css" text="Description" textFill="WHITE">
+               <font>
+                  <Font name="Nirmala UI Bold" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="708.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="categoryL" styleClass="shadow" stylesheets="@styleSheet.css" text="Category" textFill="WHITE">
+               <font>
+                  <Font name="Nirmala UI Bold" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+</HBox>

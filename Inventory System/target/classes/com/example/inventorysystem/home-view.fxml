@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1200.0" style="-fx-opaque-insets: 0.2;" styleClass="background" stylesheets="@styleSheet.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.inventorysystem.HelloController">
+   <children>
+      <VBox layoutX="29.0" layoutY="26.0" prefHeight="703.0" prefWidth="244.0" style="-fx-background-radius: 30;" stylesheets="@styleSheet.css">
+         <styleClass>
+            <String fx:value="bigContainer" />
+            <String fx:value="background" />
+         </styleClass>
+         <children>
+            <VBox alignment="CENTER" prefHeight="102.0" prefWidth="244.0">
+               <children>
+                  <Label fx:id="nameLabel" styleClass="shadow" stylesheets="@styleSheet.css" text="name" textFill="WHITE">
+                     <font>
+                        <Font name="Nirmala UI Bold" size="31.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="positionLabel" text="worker" textFill="WHITE">
+                     <font>
+                        <Font name="Nirmala UI" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <Separator prefHeight="2.0" prefWidth="100.0" />
+            <Button fx:id="homeButton" mnemonicParsing="false" onAction="#homeAction" prefHeight="76.0" prefWidth="244.0" style="-fx-background-color: transparent;" stylesheets="@styleSheet.css" text="Home" textFill="WHITE">
+               <font>
+                  <Font name="Nirmala UI Bold" size="23.0" />
+               </font>
+            </Button>
+            <Button fx:id="addItemButton" layoutX="10.0" layoutY="115.0" mnemonicParsing="false" onAction="#addItemAction" prefHeight="76.0" prefWidth="244.0" style="-fx-background-color: transparent;" styleClass="shadow" stylesheets="@styleSheet.css" text="Add Item" textFill="WHITE">
+               <font>
+                  <Font name="Nirmala UI Bold" size="23.0" />
+               </font>
+            </Button>
+            <Button fx:id="stockButton" layoutX="10.0" layoutY="191.0" mnemonicParsing="false" onAction="#stockButton" prefHeight="76.0" prefWidth="244.0" style="-fx-background-color: transparent;" stylesheets="@styleSheet.css" text="Stock" textFill="WHITE">
+               <font>
+                  <Font name="Nirmala UI Bold" size="23.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="shadow" />
+                  <String fx:value="button" />
+               </styleClass>
+            </Button>
+            <Button fx:id="sellButton" layoutX="10.0" layoutY="267.0" mnemonicParsing="false" onAction="#sellButton" prefHeight="76.0" prefWidth="244.0" style="-fx-background-color: transparent;" stylesheets="@styleSheet.css" text="Sell" textFill="WHITE">
+               <font>
+                  <Font name="Nirmala UI Bold" size="23.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="shadow" />
+                  <String fx:value="button" />
+               </styleClass>
+            </Button>
+            <Button fx:id="reportButton" layoutX="10.0" layoutY="343.0" mnemonicParsing="false" onAction="#report" prefHeight="76.0" prefWidth="244.0" style="-fx-background-color: transparent;" stylesheets="@styleSheet.css" text="Report" textFill="WHITE">
+               <font>
+                  <Font name="Nirmala UI Bold" size="23.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="shadow" />
+                  <String fx:value="button" />
+               </styleClass>
+            </Button>
+            <Button fx:id="settingsButton" layoutX="10.0" layoutY="419.0" mnemonicParsing="false" onAction="#settings" prefHeight="76.0" prefWidth="244.0" style="-fx-background-color: transparent;" styleClass="shadow" stylesheets="@styleSheet.css" text="Settings" textFill="WHITE">
+               <font>
+                  <Font name="Nirmala UI Bold" size="23.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <VBox layoutX="317.0" layoutY="33.0" prefHeight="200.0" prefWidth="850.0" style="-fx-background-radius: 30;" styleClass="upContainer" stylesheets="@styleSheet.css">
+         <children>
+            <Pane prefHeight="47.0" prefWidth="850.0">
+               <children>
+                  <Label layoutX="368.0" layoutY="8.0" styleClass="shadow" text="Social Media" textFill="WHITE">
+                     <font>
+                        <Font name="Nirmala UI Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="1.0" layoutY="43.0" prefHeight="3.0" prefWidth="850.0" />
+               </children>
+            </Pane>
+            <HBox alignment="CENTER" prefHeight="159.0" prefWidth="850.0" spacing="10.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="156.0" prefWidth="270.0">
+                     <children>
+                        <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+                           <image>
+                              <Image url="@youtube.png" />
+                           </image>
+                        </ImageView>
+                        <Label styleClass="shadow" stylesheets="@styleSheet.css" text="150 new" textFill="WHITE">
+                           <font>
+                              <Font name="Nirmala UI Bold" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label styleClass="shadow" text="YouTube Subscribes" textFill="WHITE">
+                           <font>
+                              <Font name="Nirmala UI Bold" size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <Separator orientation="VERTICAL" prefHeight="200.0" />
+                  <VBox alignment="CENTER" layoutX="300.0" layoutY="10.0" prefHeight="156.0" prefWidth="270.0">
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+                           <image>
+                              <Image url="@instagram.png" />
+                           </image>
+                        </ImageView>
+                        <Label styleClass="shadow" stylesheets="@styleSheet.css" text="98 new" textFill="WHITE">
+                           <font>
+                              <Font name="Nirmala UI Bold" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label styleClass="shadow" text="Instagram Followers" textFill="WHITE">
+                           <font>
+                              <Font name="Nirmala UI Bold" size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <Separator orientation="VERTICAL" prefHeight="200.0" />
+                  <VBox alignment="CENTER" layoutX="160.0" layoutY="10.0" prefHeight="156.0" prefWidth="270.0">
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+                           <image>
+                              <Image url="@linkedin.png" />
+                           </image>
+                        </ImageView>
+                        <Label styleClass="shadow" stylesheets="@styleSheet.css" text="50 new" textFill="WHITE">
+                           <font>
+                              <Font name="Nirmala UI Bold" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label styleClass="shadow" text="LinkedIn Connections" textFill="WHITE">
+                           <font>
+                              <Font name="Nirmala UI Bold" size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox layoutX="317.0" layoutY="275.0" prefHeight="275.0" prefWidth="400.0" spacing="10.0" style="-fx-background-color: transparent;" stylesheets="@styleSheet.css">
+         <children>
+            <HBox alignment="CENTER" prefHeight="50.0" prefWidth="400.0" style="-fx-background-color: #68cdae; -fx-background-radius: 20;">
+               <children>
+                  <Label style="-fx-opacity: 0.8;" styleClass="shadow" text="Work Time" textFill="WHITE">
+                     <font>
+                        <Font name="Nirmala UI Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <LineChart fx:id="lineChart" legendVisible="false" prefHeight="211.0" prefWidth="400.0" styleClass="axis" stylesheets="@styleSheet.css">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" />
+              </yAxis>
+            </LineChart>
+         </children>
+      </VBox>
+      <VBox layoutX="767.0" layoutY="275.0" prefHeight="261.0" prefWidth="400.0" spacing="10.0" style="-fx-background-color: transparent;" stylesheets="@styleSheet.css">
+         <children>
+            <HBox alignment="CENTER" prefHeight="53.0" prefWidth="400.0" style="-fx-background-color: #68cdae; -fx-background-radius: 20;">
+               <children>
+                  <Label style="-fx-opacity: 0.8;" styleClass="shadow" text="Project Proggraming Languages" textFill="WHITE">
+                     <font>
+                        <Font name="Nirmala UI Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <PieChart fx:id="pieChart" legendVisible="false" prefHeight="202.0" prefWidth="400.0" stylesheets="@styleSheet.css" />
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" layoutX="317.0" layoutY="536.0" prefHeight="192.0" prefWidth="850.0" stylesheets="@styleSheet.css">
+         <children>
+            <HBox alignment="CENTER" prefHeight="158.0" prefWidth="850.0" spacing="10.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="156.0" prefWidth="270.0" spacing="15.0" style="-fx-background-color: #1f9ad0; -fx-background-radius: 30; -fx-opacity: 0.8;">
+                     <children>
+                        <Label styleClass="shadow" stylesheets="@styleSheet.css" text="Upcoming meetings" textFill="WHITE">
+                           <font>
+                              <Font name="Nirmala UI Bold" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label styleClass="shadow" text="5" textFill="WHITE">
+                           <font>
+                              <Font name="Nirmala UI" size="41.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" layoutX="300.0" layoutY="10.0" prefHeight="156.0" prefWidth="270.0" spacing="15.0" style="-fx-background-color: #1f9ad0; -fx-background-radius: 30; -fx-opacity: 0.8;">
+                     <children>
+                        <Label styleClass="shadow" stylesheets="@styleSheet.css" text="Upcoming orders" textFill="WHITE">
+                           <font>
+                              <Font name="Nirmala UI Bold" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label styleClass="shadow" text="20" textFill="WHITE">
+                           <font>
+                              <Font name="Nirmala UI" size="41.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" layoutX="440.0" layoutY="10.0" prefHeight="156.0" prefWidth="270.0" spacing="15.0" style="-fx-background-color: #1f9ad0; -fx-background-radius: 30; -fx-opacity: 0.8;">
+                     <children>
+                        <Label styleClass="shadow" stylesheets="@styleSheet.css" text="Clients" textFill="WHITE">
+                           <font>
+                              <Font name="Nirmala UI Bold" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label styleClass="shadow" text="320" textFill="WHITE">
+                           <font>
+                              <Font name="Nirmala UI" size="41.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1200.0" style="-fx-opaque-insets: 0.2;" styleClass="background" stylesheets="@styleSheet.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.inventorysystem.SellController">
+    <children>
+        <VBox layoutX="29.0" layoutY="26.0" prefHeight="703.0" prefWidth="244.0" style="-fx-background-radius: 30;" stylesheets="@styleSheet.css">
+            <styleClass>
+                <String fx:value="bigContainer" />
+                <String fx:value="background" />
+            </styleClass>
+            <children>
+                <VBox alignment="CENTER" prefHeight="102.0" prefWidth="244.0">
+                    <children>
+                        <Label fx:id="nameLabel" styleClass="shadow" stylesheets="@styleSheet.css" text="name" textFill="WHITE">
+                            <font>
+                                <Font name="Nirmala UI Bold" size="31.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="positionLabel" text="worker" textFill="WHITE">
+                            <font>
+                                <Font name="Nirmala UI" size="16.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </VBox>
+                <Separator prefHeight="2.0" prefWidth="100.0" />
+                <Button fx:id="homeButton" mnemonicParsing="false" onAction="#homeAction" prefHeight="76.0" prefWidth="244.0" style="-fx-background-color: transparent;" styleClass="shadow" stylesheets="@styleSheet.css" text="Home" textFill="WHITE">
+                    <font>
+                        <Font name="Nirmala UI Bold" size="23.0" />
+                    </font>
+                </Button>
+                <Button fx:id="addItemButton" layoutX="10.0" layoutY="115.0" mnemonicParsing="false" onAction="#addItemAction" prefHeight="76.0" prefWidth="244.0" style="-fx-background-color: transparent;" styleClass="shadow" stylesheets="@styleSheet.css" text="Add Item" textFill="WHITE">
+                    <font>
+                        <Font name="Nirmala UI Bold" size="23.0" />
+                    </font>
+                </Button>
+                <Button fx:id="stockButton" layoutX="10.0" layoutY="191.0" mnemonicParsing="false" onAction="#stockButton" prefHeight="76.0" prefWidth="244.0" style="-fx-background-color: transparent;" stylesheets="@styleSheet.css" text="Stock" textFill="WHITE">
+                    <font>
+                        <Font name="Nirmala UI Bold" size="23.0" />
+                    </font>
+                    <styleClass>
+                        <String fx:value="shadow" />
+                        <String fx:value="button" />
+                    </styleClass>
+                </Button>
+                <Button fx:id="sellButton" layoutX="10.0" layoutY="267.0" mnemonicParsing="false" onAction="#sellButton" prefHeight="76.0" prefWidth="244.0" style="-fx-background-color: transparent;" stylesheets="@styleSheet.css" text="Sell" textFill="WHITE">
+                    <font>
+                        <Font name="Nirmala UI Bold" size="23.0" />
+                    </font>
+                </Button>
+                <Button fx:id="reportButton" layoutX="10.0" layoutY="343.0" mnemonicParsing="false" onAction="#report" prefHeight="76.0" prefWidth="244.0" style="-fx-background-color: transparent;" stylesheets="@styleSheet.css" text="Report" textFill="WHITE">
+                    <font>
+                        <Font name="Nirmala UI Bold" size="23.0" />
+                    </font>
+                    <styleClass>
+                        <String fx:value="shadow" />
+                        <String fx:value="button" />
+                    </styleClass>
+                </Button>
+                <Button fx:id="settingsButton" layoutX="10.0" layoutY="419.0" mnemonicParsing="false" onAction="#settings" prefHeight="76.0" prefWidth="244.0" style="-fx-background-color: transparent;" styleClass="shadow" stylesheets="@styleSheet.css" text="Settings" textFill="WHITE">
+                    <font>
+                        <Font name="Nirmala UI Bold" size="23.0" />
+                    </font>
+                </Button>
+            </children>
+        </VBox>
+        <VBox alignment="CENTER" layoutX="314.0" layoutY="20.0" prefHeight="703.0" prefWidth="850.0" spacing="50.0">
+            <children>
+                <Label style="-fx-opacity: 0.8;" styleClass="shadow" text="Sell Items from Inventory" textFill="WHITE">
+                    <font>
+                        <Font name="Nirmala UI Bold" size="24.0" />
+                    </font>
+                </Label>
+                <VBox prefHeight="200.0" prefWidth="100.0">
+                    <children>
+                        <HBox alignment="CENTER" prefHeight="57.0" prefWidth="850.0" spacing="50.0">
+                            <children>
+                                <Label style="-fx-opacity: 0.8;" styleClass="shadow" text="Product ID" textFill="WHITE">
+                                    <font>
+                                        <Font name="Nirmala UI Bold" size="24.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="374.0" layoutY="43.0" style="-fx-opacity: 0.8;" styleClass="shadow" text="Product Name" textFill="WHITE">
+                                    <font>
+                                        <Font name="Nirmala UI Bold" size="24.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="430.0" layoutY="43.0" style="-fx-opacity: 0.8;" styleClass="shadow" text="Quantity" textFill="WHITE">
+                                    <font>
+                                        <Font name="Nirmala UI Bold" size="24.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="558.0" layoutY="43.0" style="-fx-opacity: 0.8;" styleClass="shadow" text="Description" textFill="WHITE">
+                                    <font>
+                                        <Font name="Nirmala UI Bold" size="24.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="607.0" layoutY="43.0" style="-fx-opacity: 0.8;" styleClass="shadow" text="Category" textFill="WHITE">
+                                    <font>
+                                        <Font name="Nirmala UI Bold" size="24.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="59.0" prefWidth="850.0" spacing="20.0">
+                            <children>
+                                <TextField fx:id="productIdT" prefHeight="50.0" prefWidth="149.0" style="-fx-background-radius: 10;" />
+                                <TextField fx:id="productNameT" layoutX="361.0" layoutY="15.0" prefHeight="50.0" prefWidth="149.0" style="-fx-background-radius: 10;" />
+                                <TextField fx:id="quantityT" layoutX="445.0" layoutY="15.0" prefHeight="50.0" prefWidth="149.0" style="-fx-background-radius: 10;" />
+                                <TextField fx:id="DescriptionT" layoutX="530.0" layoutY="15.0" prefHeight="50.0" prefWidth="149.0" style="-fx-background-radius: 10;" />
+                                <TextField fx:id="categoryT" layoutX="614.0" layoutY="15.0" prefHeight="50.0" prefWidth="149.0" style="-fx-background-radius: 10;" />
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+                <Button mnemonicParsing="false" onAction="#selling" prefHeight="44.0" prefWidth="168.0" style="-fx-background-color: #267cde; -fx-background-radius: 20; -fx-opacity: 0.9;" styleClass="shadow" text="Sell Item" textFill="WHITE">
+                    <font>
+                        <Font name="Nirmala UI" size="20.0" />
+                    </font>
+                </Button>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>
